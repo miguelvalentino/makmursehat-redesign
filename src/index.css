@@ -109,3 +109,8 @@ header{
   width: 16px;  
   height: 16px; 
 }
+
+.carousel-image {
+  height: 500px;    
+  object-fit: cover;  
+}
