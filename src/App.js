@@ -1,11 +1,12 @@
 import React from "react"
 import Navbar from "./components/Navbar"
-import Carousel from "./components/carousel";
+import Home from "./pages/Home";
+
 function App() {
   return (
     <div>
       <Navbar />
-      <Carousel />
+      <Home />
     </div>
   );
 }
