@@ -7,7 +7,6 @@
 }
 
 body{
-  background: url(assets/dose-juice-sTPy-oeA3h0-unsplash.jpg) no-repeat center center/cover;
   min-height: 100vh;
   font-family: 'Lucida Sans';
 }
@@ -113,4 +112,35 @@ header{
 .carousel-image {
   height: 500px;    
   object-fit: cover;  
+}
+
+.main-heading {
+  color: rgb(39, 129, 0);
+  font-size: 26px;
+}
+
+.underline {
+  height: 4px;
+  width: 4rem;
+  background-color: green;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.bg-c-light{
+  background-color: #f2f2f2;
+}
+
+.section{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+p{
+  font-size: 14px;
+  color: #262626;
+}
+
+.popular{
+  margin-right: 60px;
 }
