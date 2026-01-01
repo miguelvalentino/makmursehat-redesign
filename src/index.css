@@ -115,7 +115,6 @@ header{
 }
 
 .main-heading {
-  margin-top: 15px;
   color: rgb(39, 129, 0);
   font-size: 26px;
 }
@@ -126,4 +125,22 @@ header{
   background-color: green;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.bg-c-light{
+  background-color: #f2f2f2;
+}
+
+.section{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+p{
+  font-size: 14px;
+  color: #262626;
+}
+
+.popular{
+  margin-right: 60px;
 }
