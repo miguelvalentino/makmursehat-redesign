@@ -146,3 +146,17 @@ p{
 .popular{
   margin-right: 60px;
 }
+
+.light-green-bg {
+    background-color: #E8F5E9; 
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+}
