@@ -4,7 +4,7 @@ import searchIcon from '../assets/search.png';
 
 function CustomNavbar() {
   return (
-    <Navbar style={{ backgroundColor: '#E8F5E9' }} expand="lg" className="py-3">
+    <Navbar className="navbar-custom-bg py-3" expand="lg">
       <Container>
         <Navbar.Brand href="/home">MakmurSehat</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -23,7 +23,7 @@ function CustomNavbar() {
               aria-label="Search"
             />
             <Button variant="outline-success">
-              <img src={searchIcon} alt="Cari" style={{ width: '20px', height: '20px' }} />
+              <img src={searchIcon} alt="Cari" className="search-icon-img" />
             </Button>
           </Form>
         </Navbar.Collapse>

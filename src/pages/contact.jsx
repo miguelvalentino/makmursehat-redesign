@@ -6,7 +6,6 @@ function Contact() {
       <h1>Contact Us</h1>
       <p>This is the contact page.</p>
 
-
       <section className='section'>
         <div className='container'>
           <div className='card shadow'>
