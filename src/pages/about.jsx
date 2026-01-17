@@ -9,25 +9,25 @@ function About() {
     {
       name: "John Doe",
       role: "Progammer",
-      bio: "Lorem ipsum dolor sit amet consectetur. Repellat cum distinctio quod error. Pariatur enim obcaecati illum nihil omnis sint ea. Velit odio, repellendus consequuntur exercitationem numquam hic id reprehenderit aliquam quia. Quae, nam tempore?" ,
+      bio: "John is responsible for building and maintaining the MakmurSehat platform from the ground up. He focuses on creating a fast, reliable, and user-friendly experience so visitors can easily discover recipes and cooking guides. With a strong passion for web development and clean code, he ensures that every feature runs smoothly and securely." ,
       photo: "" 
     },
     {
       name: "Jane Smith",
       role: "Nutritionist",
-      bio: "Lorem ipsum dolor sit amet consectetur. Repellat cum distinctio quod error. Pariatur enim obcaecati illum nihil omnis sint ea. Velit odio, repellendus consequuntur exercitationem numquam hic id reprehenderit aliquam quia. Quae, nam tempore?" ,
+      bio: "Jane designs and reviews every recipe from a nutritional perspective. She ensures that each menu is balanced, healthy, and suitable for different lifestyles, including weight management and active living. Her goal is to help people enjoy delicious food while still meeting their daily nutritional needs." ,
       photo: "" 
     },
     {
       name: "Peter Jones",
       role: "Food Photographer",
-      bio: "Lorem ipsum dolor sit amet consectetur. Repellat cum distinctio quod error. Pariatur enim obcaecati illum nihil omnis sint ea. Velit odio, repellendus consequuntur exercitationem numquam hic id reprehenderit aliquam quia. Quae, nam tempore?",
+      bio: "Peter brings every dish to life through visual storytelling. He specializes in capturing the natural colors and textures of food to make recipes look as appetizing as they taste. His work helps users feel inspired to cook and confident to try new healthy meals at home.",
       photo: "" 
     },
     {
       name: "Chris Green",
       role: "Community Manager",
-      bio: "Lorem ipsum dolor sit amet consectetur. Repellat cum distinctio quod error. Pariatur enim obcaecati illum nihil omnis sint ea. Velit odio, repellendus consequuntur exercitationem numquam hic id reprehenderit aliquam quia. Quae, nam tempore?",
+      bio: "Chris manages the MakmurSehat community and keeps communication flowing between users and the team. He handles feedback, suggestions, and questions while fostering a positive and supportive environment. His mission is to make every visitor feel welcome and motivated to stay consistent with healthy eating.",
       photo: "" 
     }
   ];
@@ -64,8 +64,8 @@ function About() {
 
         <Row className="justify-content-center">
           {teamMembers.map((member, index) => (
-            <Col md={4} sm={6} key={index} className="mb-4">
-              <Card className="team-card-redesigned">
+            <Col md={4} sm={6} key={index} className="mb-4 d-flex">
+              <Card className="team-card-redesigned h-100">
                 <div className={`profile-placeholder shadow-sm ${member.photo ? 'has-photo' : ''}`}>
                   {member.photo ? (
                     <img src={member.photo} alt={member.name} className="profile-img" />

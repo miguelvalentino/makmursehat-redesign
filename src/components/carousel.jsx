@@ -19,8 +19,8 @@ function ControlledCarousel() {
           src={img1}
           alt="First slide"/>
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3>Makan Sehat Tidak Harus Mahal</h3>
+          <p>Temukan ratusan resep bergizi yang mudah dibuat, terjangkau, dan tetap lezat untuk seluruh keluarga.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -28,8 +28,8 @@ function ControlledCarousel() {
           src={img2}
           alt="First slide"/>
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>Resep Seimbang, Hidup Lebih Bertenaga</h3>
+          <p>Kami membantu kamu memilih menu dengan nutrisi seimbang untuk mendukung aktivitas harian dan gaya hidup aktif.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -37,9 +37,9 @@ function ControlledCarousel() {
           src={img3}
           alt="First slide"/>
         <Carousel.Caption>
-          <h3>Third slide label</h3>
+          <h3>Mulai Perjalanan Sehatmu Hari Ini</h3>
           <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            Jelajahi berbagai resep, tips gizi, dan panduan memasak sehat yang praktis untuk pemula hingga mahir.
           </p>
         </Carousel.Caption>
       </Carousel.Item>
