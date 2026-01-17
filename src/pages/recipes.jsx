@@ -1,11 +1,18 @@
 import React, { useState, useEffect } from 'react';
+import quinoaImage from '../assets/quinoa.jpg';
+import buahNaga from '../assets/buah naga.jpg'
+import pepesIkan from '../assets/pepes-ikan-kembung-foto-resep-utama.jpg'
+import { useParams } from "react-router-dom";
+
+
 
 function Recipes() {
+  const { id } = useParams();
   const recipesData = [
     {
       id: 1,
       name: "Nasi Goreng Quinoa Merah",
-      image: "",
+      image: quinoaImage,
       price: 35000,
       ingredients: [
         "1 piring Quinoa/Nasi Merah",
@@ -26,7 +33,7 @@ function Recipes() {
     {
       id: 2,
       name: "Salad Buah Naga 'Ceria'",
-      image: "",
+      image: buahNaga,
       price: 25000,
       ingredients: [
         "1/2 buah Naga Merah",
@@ -47,7 +54,7 @@ function Recipes() {
     {
       id: 3,
       name: "Pepes Ikan Kembung Kemangi",
-      image: "",
+      image: pepesIkan,
       price: 20000,
       ingredients: [
         "2 ekor Ikan Kembung segar",
@@ -210,11 +217,15 @@ function Recipes() {
   const [activeRecipeId, setActiveRecipeId] = useState(null);
 
   useEffect(() => {
-    if (recipesData.length > 0) {
-      setSelectedRecipe(recipesData[0]);
-      setActiveRecipeId(recipesData[0].id);
+    if (id) {
+      const foundRecipe = recipesData.find(r => r.id === parseInt(id));
+      if (foundRecipe) {
+        setSelectedRecipe(foundRecipe);
+        setActiveRecipeId(foundRecipe.id);
+      }
     }
-  }, []);
+  }, [id]);
+
 
   const handleSearch = (event) => {
     setSearchTerm(event.target.value);
@@ -272,7 +283,7 @@ function Recipes() {
                       <div className='underline'></div>
                       <div className="mb-3">
                         {selectedRecipe.image ? (
-                          <img src={selectedRecipe.image} alt={selectedRecipe.name} className="img-fluid" />
+                          <img src={selectedRecipe.image} alt={selectedRecipe.name} className="img-fluid recipe-detail-image" />
                         ) : (
                           <div className="image-placeholder">
                             No Image Available
